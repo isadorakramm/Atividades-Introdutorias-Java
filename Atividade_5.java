@@ -7,7 +7,8 @@ class Atividade_5 {
         // instanciando e criando um objeto Scanner
         Scanner ler = new Scanner(System.in);
         // variáveis
-        int x, y, divisao;
+        int x, y;
+        double divisao;
         
         // entrada de dados
         System.out.printf("Vamos dividir números!\n");
@@ -17,9 +18,9 @@ class Atividade_5 {
         y = ler.nextInt();
         
         // processamento
-        divisao = x / y;
+        divisao = (double) x / y;
         // saída
-        System.out.printf("O resultado da divisão é igual a "+divisao+".");
+        System.out.printf("O resultado da divisão é igual a %.2f.", divisao);
         System.exit(0);
     }
 }
