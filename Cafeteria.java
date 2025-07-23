@@ -7,7 +7,7 @@ class Cafeteria {
         Scanner ler = new Scanner(System.in);
         // variáveis
         int escolhaCafe, escolhaComida;
-        String cafe = "", comida = "";
+        String cafe = "", comida = "", querComida;
         double total = 0.0;
 
         
@@ -51,9 +51,9 @@ class Cafeteria {
         }
 
         System.out.printf("\nAlguma comida? (s/n) ");
-        String querComida = ler.next();
+        querComida = ler.next();
 
-        if (querComida != "n") {
+        if (querComida.equalsIgnoreCase("s")) {
             System.out.println("O que você deseja comer? ");
             escolhaComida = ler.nextInt();
 
@@ -86,10 +86,10 @@ class Cafeteria {
                     System.out.println("Opção de comida inválida.");
                     System.exit(0);
             }
-            System.out.printf("\nCerto! Você pediu um %s e um %s, o valor total do pedido é igual a R$%.2f.\n", cafe, comida, total);
+            System.out.printf("\nCerto! Você pediu um %s e um %s, o valor total do pedido é R$%.2f.\n", cafe, comida, total);
         } else {
-            System.out.printf("\nCerto! Você pediu um %s, o valor total do pedido é igual a R$%.2f.\n", cafe, total);
-        }
+            System.out.printf("\nCerto! Você pediu um %s, o valor total do pedido é R$%.2f.\n", cafe, total);
+        } 
         System.exit(0);
         }
 }
