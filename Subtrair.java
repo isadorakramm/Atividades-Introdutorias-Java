@@ -1,25 +1,26 @@
-// Crie um programa que permita o usuário digitar dois valores, após deve mulCplicar os valores e informar o resultado na tela
+// Crie um programa que permita o usuário digitar dois valores, após deve subtrair os valores e informar o resultado na tela.
 
 import java.util.Scanner;
 
-class Atividade_4 {
+class Subtrair {
     public static void main(String[] args) {
         // instanciando e criando um objeto Scanner
         Scanner ler = new Scanner(System.in);
         // variáveis
-        int x, y, multiplicacao;
+        int x, y, subtracao;
         
         // entrada de dados
-        System.out.printf("Vamos multiplicar números!\n");
+        System.out.printf("Vamos subtrair números!\n");
         System.out.printf("Informe o primeiro valor: ");
         x = ler.nextInt();
         System.out.printf("Informe o segundo valor: ");
         y = ler.nextInt();
         
         // processamento
-        multiplicacao = x * y;
+        subtracao = x - y;
         // saída
-        System.out.printf("O resultado da multiplicação é igual a %d.", multiplicacao);
+        System.out.printf("O resultado da subtração é igual a %d", subtracao);
         System.exit(0);
+        
     }
 }

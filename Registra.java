@@ -2,14 +2,14 @@
 
 import java.util.Scanner;
 
-class Atividade_1 {
+class Registra {
     public static void main (String[] args) {
         Scanner ler = new Scanner(System.in);
         int idade;
         String nome;
 
         System.out.printf("Qual é o seu nome? ");
-        nome = ler.next();
+        nome = ler.nextLine();
         System.out.printf("Quantos anos você tem? ");
         idade = ler.nextInt();
 

@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Atividade_5 {
+class Dividir {
     public static void main(String[] args) {
         // instanciando e criando um objeto Scanner
         Scanner ler = new Scanner(System.in);
@@ -17,10 +17,15 @@ class Atividade_5 {
         System.out.printf("Informe o segundo valor: ");
         y = ler.nextInt();
         
-        // processamento
-        divisao = (double) x / y;
         // saída
-        System.out.printf("O resultado da divisão é igual a %.2f.", divisao);
-        System.exit(0);
+        if (y != 0) {
+            divisao = (double) x / y;
+            System.out.printf("O resultado da divisão é igual a %.1f.", divisao);
+            System.exit(0);
+        } else {
+            System.out.println("A divisão por zero é indeterminada.");
+            System.exit(1);
+        }
+        
     }
 }

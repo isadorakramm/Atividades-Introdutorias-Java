@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Atividade_6 {
+class Calculadora {
     public static void main(String[] args) {
         // instanciando e criando um objeto Scanner
         Scanner ler = new Scanner(System.in);
@@ -29,11 +29,15 @@ class Atividade_6 {
             resultado = x * y;
             break;
             case 4:
-            resultado = (double) x / y;
+            if (y != 0) {
+                resultado = (double) x / y;
+            } else {
+                System.out.println("ERRO! A divisão por zero é indeterminada.");
+                System.exit(1);
+            }
             break;
         }
         // saída
-
         System.out.printf("O resultado do cálculo é igual a %.1f.", resultado);
         System.exit(0);
     }
